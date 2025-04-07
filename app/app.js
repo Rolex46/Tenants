@@ -24,10 +24,10 @@ function renderTenantsList(tenants) {
             <div class="tenant-header">
                 <div class="tenant-profile">
                     <div class="avatar">
-                        ${tenant.Contact_Name.name.charAt(0)}
+                        ${tenant.Contact_Name?.name.charAt(0)}
                     </div>
                     <div class="tenant-basic-info">
-                        <h2>${tenant.Contact_Name.name}</h2>
+                        <h2>${tenant.Contact_Name?.name}</h2>
                         <p><i class="fas fa-phone"></i> ${tenant.Phone || 'No phone'}</p>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ function renderTenantsList(tenants) {
                         </tr>
                         <tr>
                             <th>Unit</th>
-                            <td>${tenant.Unit_Name.name}</td>
+                            <td>${tenant.Unit_Name?.name}</td>
                         </tr>
                         <tr>
                             <th>Owner</th>
